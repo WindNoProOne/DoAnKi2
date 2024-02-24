@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/component.css" />
+</head>
+
+<body>
+  <!-- Navigation Bar
+     -->
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand mx-2" href="home.php"><img src="img/source/Logo.svg" alt="" /></a>
+
+        <!-- Search bar -->
+        <form class="d-flex">
+          <div class="d-flex border rounded-pill">
+            <i class="bi bi-search mx-2 my-auto"></i>
+            <input class="form-control me-2 border-0 search shadow-none bg-none" type="search" placeholder="Search"
+              aria-label="Search" />
+          </div>
+        </form>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Link -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-5">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle hover-underline-animation" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Men
+              </a>
+              <ul class="dropdown-menu" aria-la elledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Sneaker</a></li>
+                <li><a class="dropdown-item" href="#">Boots</a></li>
+                <li><a class="dropdown-item" href="#">Sandals</a></li>
+                <li><a class="dropdown-item" href="#">Slippers</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle hover-underline-animation" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Women
+              </a>
+              <ul class="dropdown-menu" aria-la elledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Sneaker</a></li>
+                <li><a class="dropdown-item" href="#">Boots</a></li>
+                <li><a class="dropdown-item" href="#">Sandals</a></li>
+                <li><a class="dropdown-item" href="#">Slippers</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle hover-underline-animation" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Brand
+              </a>
+              <ul class="dropdown-menu" aria-la elledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Nike</a></li>
+                <li><a class="dropdown-item" href="#">Adidas</a></li>
+                <li><a class="dropdown-item" href="#">Timberland</a></li>
+                <li><a class="dropdown-item" href="#">Dr Martens</a></li>
+                <li><a class="dropdown-item" href="#">Others</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link hover-underline-animation" href="#">Collection</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hover-underline-animation" href="#">Contact</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav ms-3">
+            <li class="nav-item mx-0">
+              <a href="" class="btn btn-outline-primary rounded-pill cart-button px-2 py-0"><i
+                  class="bi bi-cart-dash fs-3"></i></a>
+            </li>
+            <li class="nav-item mx-2 my-auto">
+              <a href="" class="py-0 px-1 link-dark profile-link"><i class="bi bi-person-circle fs-5 me-1"></i>User
+                Profile</a>
+            </li>
+            <div class="vr fw-normal my-1 mx-1"></div>
+            <li class="nav-item my-auto mx-1">
+              <a href="" class="btn btn-primary rounded-pill p-auto"><i
+                  class="bi bi-box-arrow-right me-2"></i>Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="nav-space"></div>
+
+  <!-- Carousel -->
+  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="img/carousel-6.jpg" class="" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <p class="text-white">Some representative placeholder content for the first slide.</p>
+          <a href="" class="btn btn-warning rounded-pill fs-5">Learn More</a>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="10000">
+        <img src="img/carousel-2.jpg" class="d-block" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <p class="text-white">Some representative placeholder content for the first slide.</p>
+          <a href="" class="btn btn-warning rounded-pill fs-5">Learn More</a>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="10000">
+        <img src="img/carousel-3.jpg" class="d-block" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <p class="text-white">Some representative placeholder content for the first slide.</p>
+          <a href="" class="btn btn-warning rounded-pill fs-5">Learn More</a>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="10000">
+        <img src="img/carousel-4.jpg" class="d-block" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <p class="text-white">Some representative placeholder content for the first slide.</p>
+          <a href="" class="btn btn-warning rounded-pill fs-5">Learn More</a>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="10000">
+        <img src="img/carousel-5.jpg" class="d-block" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <p class="text-white">Some representative placeholder content for the first slide.</p>
+          <a href="" class="btn btn-warning rounded-pill fs-5">Learn More</a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Type Category -->
+  <section class="section-margin my-5">
+    <div class="container mx-auto d-flex justify-content-center">
+      <div class="row">
+        <div class="card type-card text-white p-0 col-2 me-3">
+          <img src="img/type-1.jpg" class="card-img rounded-0">
+          <div class="card-img-overlay d-flex justify-content-center">
+            <button class="btn type-button">Sneaker</button>
+          </div>
+        </div>
+        <div class="card type-card text-white p-0 col-2 me-3">
+          <img src="img/type-2.jpg" class="card-img rounded-0">
+          <div class="card-img-overlay d-flex justify-content-center">
+            <button class="btn type-button">Boots</button>
+          </div>
+        </div>
+        <div class="card type-card text-white p-0 col-2 me-3">
+          <img src="img/type-3.jpg" class="card-img rounded-0">
+          <div class="card-img-overlay d-flex justify-content-center">
+            <button class="btn type-button">Sandals</button>
+          </div>
+        </div>
+        <div class="card type-card text-white p-0 col-2 me-3">
+          <img src="img/type-4.jpg" class="card-img rounded-0">
+          <div class="card-img-overlay d-flex justify-content-center">
+            <button class="btn type-button">Slipper</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Slider -->
+  <section class="slider py-5 text-center">
+    <div class="carousel" data-flickity='{ "wrapAround": true }'>
+      <div class="carousel-cell p-3">
+        <div class="card me-2">
+          <img src="img/1.jpg" class="card-img-top" alt="...">
+          <div class="card-body text-center d-flex flex-column">
+            <h5 class="card-title">Card title Lorem ipsum dolor sit amet. Loremdfsdf ipsum dolor sit amet.</h5>
+            <p class="card-text mb-0">Some quick</p>
+            <a href="" class="btn btn-primary rounded-pill mx-4 mt-auto mb-0"><i class="bi bi-cart-plus me-2"></i>Add to
+              Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brand -->
+  <section class="py-5 brand">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-6 border py-auto d-flex flex-column justify-content-center">
+          <div class="row d-flex justify-content-between align-content-center">
+            <div class="col-4">
+              <a href=""><img src="img/source/nike.png" class="brand-logo"></a>
+            </div>
+            <div class="col-4">
+              <a href=""><img src="img/source/adidas.png" class="brand-logo"></a>
+            </div>
+            <div class="col-4">
+              <a href=""><img src="img/source/Puma-Logo-PNG-1980-–-Now.png " class="brand-logo"></a>
+            </div>
+          </div>
+
+          <div class="row d-flex justify-content-between align-content-center">
+            <div class="col-4">
+              <a href=""><img src="img/source/Timberland.png" class="brand-logo"></a>
+            </div>
+            <div class="col-4">
+              <a href=""><img src="img/source/DrMartens.png" class="brand-logo"></a>
+            </div>
+            <div class="col-4">
+              <a href=""><img src="img/source/converse.png" class="brand-logo"></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div
+            class="container me-5 my-0 about-us border d-flex flex-column justify-content-center align-content-center p-0">
+            <div class="about-caption py-4 px-5 m-0">
+              <h3 class="about-text">About Us</h3>
+              <p class="about-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi pariatur nostrum
+                quo? Cumque possimus, ipsam modi reiciendis, ipsa optio voluptas, delectus nam magnam obcaecati aut
+                eveniet amet! Eligendi, quam velit!</p>
+              <div>
+                <a href="about.php" class="btn btn-warning rounded-pill">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white footer px-0">
+    <div class="container-fluid">
+      <div class="row text-center mx-4 row-border py-4 my-2">
+        <div class="col-6 text-lg-start">
+          <a href=""><img src="img/source/Logo.png" alt=""></a>
+        </div>
+        <div class="col-1 text-lg-start">
+          <div class="row pb-3">
+            <div><span class="fw-bold text-footer text-header">Type</span></div>
+          </div>
+          <div class="row">
+            <div class="fw-light text-footer">Men</div>
+          </div>
+          <div class="row">
+            <div class="fw-light text-footer">Women</div>
+          </div>
+          <div class="row">
+            <div class="fw-light text-footer">Collection</div>
+          </div>
+        </div>
+        <div class="col-1 text-lg-start">
+          <div class="row pb-3">
+            <div><span class="fw-bold text-footer text-header">Product</span></div>
+          </div>
+          <div class="row">
+            <div class="fw-light text-footer">Sneaker</div>
+          </div>
+          <div class="row">
+            <div class="fw-light text-footer">Boots</div>
+          </div>
+          <div class="row">
+            <div class="fw-light text-footer">Sandals</div>
+          </div>
+          <div class="row">
+            <div class="fw-light text-footer">Slipper</div>
+          </div>
+        </div>
+        <div class="col-2 text-lg-start">
+          <div class="row pb-3">
+            <div><span class="fw-bold text-footer text-header">Contact</span></div>
+          </div>
+          <div class="row">
+            <div class="fw-light text-footer">Feedback</div>
+          </div>
+          <div class="row">
+            <div class="fw-light text-footer"><i class="bi bi-house-door"></i> CMT8, District 3, HCM</div>
+          </div>
+          <div class="row">
+            <div class="fw-light text-footer"><i class="bi bi-mailbox"></i> phedip05@gmail.com</div>
+          </div>
+          <div class="row">
+            <div class="fw-light text-footer"><i class="bi bi-telephone"></i> +84 908 993 9890</div>
+          </div>
+        </div>
+        <div class="col-2 text-lg-end">
+          <div class="row pb-3">
+            <div><a href="" class="btn btn-outline-info rounded-pill">Login</a></div>
+          </div>
+          <div class="row pb-3">
+            <div><a href="" class="btn btn-outline-secondary rounded-pill">Register</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="row text-center mx-4 pb-5">
+        <div class="col-6 text-sm-start text-footer">@2022 ProjectSem02</div>
+        <div class="col-6 text-end text-footer">Follow Us: <i class="bi bi-twitter"></i> <i class="bi bi-facebook"></i>
+          <i class="bi bi-youtube"></i>
+          <i class="bi bi-instagram"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,290 @@
+/* Button */
+.btn-primary {
+  font-size: normal;
+  border: none;
+  font-weight: bold;
+  color: white;
+  background-color: #2c3639;
+  --bs-btn-hover-color: #2c3639;
+  --bs-btn-hover-bg: white;
+  --bs-btn-hover-border-color: #2c3639;
+  --bs-btn-active-color: #3f4e4f;
+  --bs-btn-active-bg: #dcd7c9;
+  --bs-btn-active-border-color: #2c3639;
+  --bs-btn-active-shadow: none;
+}
+
+.btn-outline-primary {
+  font-size: normal;
+  font-weight: bold;
+  --bs-btn-color: #2c3639;
+  --bs-btn-border-color: #2c3639;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #2c3639;
+  --bs-btn-hover-border-color: #fff;
+  --bs-btn-focus-shadow-rgb: 13, 110, 253;
+  --bs-btn-active-color: #2c3639;
+  --bs-btn-active-bg: #dcd7c9;
+  --bs-btn-active-border-color: #2c3639;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #2c3639;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #2c3639;
+}
+
+.btn-danger {
+  padding: 0.3rem 2rem;
+  font-weight: bold;
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #c84b31;
+  --bs-btn-border-color: #c84b31;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #ff4c29;
+  --bs-btn-hover-border-color: #ff4c29;
+  --bs-btn-focus-shadow-rgb: 225, 83, 97;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #ff7f66;
+  --bs-btn-active-border-color: #ff7f66;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #a27b5c;
+  --bs-btn-disabled-border-color: #a27b5c;
+}
+
+.btn-warning {
+  padding: 0.3rem 2rem;
+  font-weight: bold;
+  --bs-btn-color: #2c3639;
+  --bs-btn-bg: #ffc23c;
+  --bs-btn-border-color: #ffc23c;
+  --bs-btn-hover-color: #2c3639;
+  --bs-btn-hover-bg: #fedb5d;
+  --bs-btn-hover-border-color: #fedb5d;
+  --bs-btn-focus-shadow-rgb: 217, 164, 6;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #c0912c;
+  --bs-btn-active-border-color: #c0912c;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #2c3639;
+  --bs-btn-disabled-bg: #c0912c;
+  --bs-btn-disabled-border-color: #c0912c;
+}
+
+.btn-success {
+  padding: 0.3rem 2rem 0.3rem 1.7rem;
+  font-weight: bold;
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #42855b;
+  --bs-btn-border-color: #42855b;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #37b164;
+  --bs-btn-hover-border-color: #37b164;
+  --bs-btn-focus-shadow-rgb: 60, 153, 110;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #68a37e;
+  --bs-btn-active-border-color: #68a37e;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #68a37e;
+  --bs-btn-disabled-border-color: #68a37e;
+}
+
+.btn-outline-info {
+  padding: 0.3rem 2rem;
+  font-size: normal;
+  font-weight: bold;
+  --bs-btn-color: #3f4e4f;
+  --bs-btn-border-color: #3f4e4f;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #3f4e4f;
+  --bs-btn-hover-border-color: #3f4e4f;
+  --bs-btn-focus-shadow-rgb: 13, 202, 240;
+  --bs-btn-active-color: #3f4e4f;
+  --bs-btn-active-bg: #dcd7c9;
+  --bs-btn-active-border-color: #3f4e4f;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #3f4e4f;
+  --bs-btn-disabled-bg: #dcd7c9;
+  --bs-btn-disabled-border-color: #3f4e4f;
+  --bs-gradient: none;
+}
+
+.btn-outline-secondary {
+  padding: 0.3rem 1.4rem;
+  font-size: normal;
+  font-weight: bold;
+  --bs-btn-color: #3f4e4f;
+  --bs-btn-border-color: #3f4e4f;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #a27b5c;
+  --bs-btn-hover-border-color: #a27b5c;
+  --bs-btn-focus-shadow-rgb: 13, 202, 240;
+  --bs-btn-active-color: #3f4e4f;
+  --bs-btn-active-bg: #d2aa89;
+  --bs-btn-active-border-color: #3f4e4f;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #3f4e4f;
+  --bs-btn-disabled-bg: #dcd7c9;
+  --bs-btn-disabled-border-color: #3f4e4f;
+  --bs-gradient: none;
+}
+
+.btn-primary:hover,
+.btn-danger:hover,
+.btn-warning:hover,
+.btn-success:hover {
+  box-shadow: 2px 3px 2px #888888;
+}
+
+.btn-primary:active,
+.btn-danger:active,
+.btn-warning:active,
+.btn-success:active {
+  box-shadow: 1px 2px 1px #b1b1b1;
+}
+
+.cart-button {
+  --bs-btn-border-color: #fff;
+}
+
+.profile-button {
+  --bs-btn-border-color: #fff;
+}
+
+/* Link */
+.profile-link {
+  color: #2c3034 !important;
+}
+.profile-link:hover {
+  color: #3f4e4f !important;
+  text-shadow: 1px 1px 2px #888888;
+}
+
+/* Form Input */
+.form-input {
+  border-style: solid;
+  border-width: thin;
+  border-color: #dcd7c9;
+  padding-left: 1rem;
+  width: 100%;
+}
+
+.form-input:focus {
+  outline: none;
+  border: #2c3639 thin solid;
+  box-shadow: 1px 1px 2px grey;
+}
+
+.input-label {
+  font-weight: 600;
+}
+
+::-webkit-file-upload-button {
+  width: 8rem;
+  border: none;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  cursor: pointer;
+  color: #2c3639;
+  background-color: #dcd7c9;
+}
+
+.form-select {
+  background-color: #ede4e0;
+  text-align: center;
+}
+
+/* Table */
+.table-dark {
+  --bs-table-color: #fff;
+  --bs-table-bg: #2c3639;
+  --bs-table-border-color: #373b3e;
+  --bs-table-striped-bg: #2c3034;
+  --bs-table-striped-color: #fff;
+}
+
+/* Card */
+.card {
+  width: 16rem;
+  border: none;
+  transition: linear 0.1s;
+}
+
+.card:hover {
+  box-shadow: 3px 4px 3px #888888;
+}
+
+.card .card-img-top {
+  height: 13rem;
+}
+
+.card .card-body {
+  height: 11rem;
+}
+
+.card .card-title {
+  font-weight: bold;
+  /* white-space: nowrap; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.card .card-text {
+  font-weight: lighter;
+}
+
+.card .card-body a {
+  font-size: 1.3rem;
+}
+
+/* Type Card */
+.type-card .card-img {
+  height: 100%;
+}
+
+.type-button {
+  color: #fff;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.type-button:hover {
+  text-shadow: #2c3034 2px 2px 2px;
+  transition: linear 0.1s;
+  font-weight: 500;
+  font-size: 2.3rem;
+  transition: linear 0.1s;
+}
+
+.type-card:hover {
+  opacity: 0.8;
+  box-shadow: none;
+  transition: linear 0.2s;
+}
+
+.type-button:active {
+  border: none;
+}
+.type-button:focus {
+  border: none;
+}
+
+.title-box {
+  padding: auto;
+}
+
+.title-box .section-title {
+  font-size: 1.7rem;
+  color: #2c3639;
+}
+
+.title-box .section-title .section-title-child {
+  font-size: 2.3rem;
+}
+
+.title-icon {
+  font-size: 3rem;
+}
